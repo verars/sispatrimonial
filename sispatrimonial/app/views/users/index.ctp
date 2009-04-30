@@ -1,5 +1,5 @@
 <div class="users index">
-<h2><?php __('Users');?></h2>
+<h2><?php __('Usuários');?></h2>
 <p>
 <?php
 echo $paginator->counter(array(
@@ -8,23 +8,23 @@ echo $paginator->counter(array(
 ?></p>
 <table cellpadding="0" cellspacing="0">
 <tr>
-	<th><?php echo $paginator->sort('id');?></th>
-	<th><?php echo $paginator->sort('username');?></th>
-	<th><?php echo $paginator->sort('password');?></th>
-	<th><?php echo $paginator->sort('group_id');?></th>
-	<th><?php echo $paginator->sort('created');?></th>
-	<th><?php echo $paginator->sort('name');?></th>
-	<th><?php echo $paginator->sort('rg');?></th>
-	<th><?php echo $paginator->sort('nascimento');?></th>
-	<th><?php echo $paginator->sort('telefone');?></th>
-	<th><?php echo $paginator->sort('celular');?></th>
-	<th><?php echo $paginator->sort('endereco');?></th>
-	<th><?php echo $paginator->sort('cep');?></th>
-	<th><?php echo $paginator->sort('email');?></th>
-	<th><?php echo $paginator->sort('email2');?></th>
-	<th><?php echo $paginator->sort('ativo');?></th>
-	<th><?php echo $paginator->sort('aut_email');?></th>
-	<th class="actions"><?php __('Actions');?></th>
+	<th><?php echo $paginator->sort('Identificação','id');?></th>
+	<th><?php echo $paginator->sort('Matrícula','username');?></th>
+	<th><?php echo $paginator->sort('Senha','password');?></th>
+	<th><?php echo $paginator->sort('Identificação do Grupo','group_id');?></th>
+	<th><?php echo $paginator->sort('Criado em','created');?></th>
+	<th><?php echo $paginator->sort('Nome','name');?></th>
+	<th><?php echo $paginator->sort('RG','rg');?></th>
+	<th><?php echo $paginator->sort('Data de Nascimento','nascimento');?></th>
+	<th><?php echo $paginator->sort('Telefone','telefone');?></th>
+	<th><?php echo $paginator->sort('Celular','celular');?></th>
+	<th><?php echo $paginator->sort('Endereço','endereco');?></th>
+	<th><?php echo $paginator->sort('CEP','cep');?></th>
+	<th><?php echo $paginator->sort('Email','email');?></th>
+	<th><?php echo $paginator->sort('Email 2','email2');?></th>
+	<th><?php echo $paginator->sort('Ativo','ativo');?></th>
+	<th><?php echo $paginator->sort('Autorizado a receber email','aut_email');?></th>
+	<th class="actions"><?php __('Ações');?></th>
 </tr>
 <?php
 $i = 0;
@@ -39,7 +39,7 @@ foreach ($users as $user):
 			<?php echo $user['User']['id']; ?>
 		</td>
 		<td>
-			<?php echo $user['User']['username']; ?>
+			<?php echo $user['User']['username'] ; ?>
 		</td>
 		<td>
 			<?php echo $user['User']['password']; ?>
@@ -84,9 +84,9 @@ foreach ($users as $user):
 			<?php echo $user['User']['aut_email']; ?>
 		</td>
 		<td class="actions">
-			<?php echo $html->link(__('View', true), array('action'=>'view', $user['User']['id'])); ?>
-			<?php echo $html->link(__('Edit', true), array('action'=>'edit', $user['User']['id'])); ?>
-			<?php echo $html->link(__('Delete', true), array('action'=>'delete', $user['User']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $user['User']['id'])); ?>
+			<?php echo $html->link(__('Vizualizar', true), array('action'=>'view', $user['User']['id'])); ?>
+			<?php echo $html->link(__('Editar', true), array('action'=>'edit', $user['User']['id'])); ?>
+			<?php echo $html->link(__('Deletar', true), array('action'=>'delete', $user['User']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $user['User']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -99,6 +99,6 @@ foreach ($users as $user):
 </div>
 <div class="actions">
 	<ul>
-		<li><?php echo $html->link(__('New User', true), array('action'=>'add')); ?></li>
+		<li><?php echo $html->link(__('Cadastrar Novo Usuario', true), array('action'=>'add')); ?></li>
 	</ul>
 </div>
