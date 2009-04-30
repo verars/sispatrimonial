@@ -1,0 +1,4 @@
+2009-04-30 10:21:46 Debug: Notice (8): Undefined property: GroupsController::$User in [APP\controllers\groups_controller.php, line 74]
+2009-04-30 10:21:46 Debug: Notice (8): Trying to get property of non-object in [APP\controllers\groups_controller.php, line 74]
+2009-04-30 10:21:46 Debug: Notice (8): Undefined property: GroupsController::$User in [APP\controllers\groups_controller.php, line 74]
+2009-04-30 10:21:46 Debug: Notice (8): Trying to get property of non-object in [APP\controllers\groups_controller.php, line 74]
