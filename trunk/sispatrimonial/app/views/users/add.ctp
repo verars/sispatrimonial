@@ -1,28 +1,28 @@
 <div class="users form">
 <?php echo $form->create('User');?>
 	<fieldset>
- 		<legend><?php __('Add User');?></legend>
+ 		<legend><?php __('Adicionar Usuário');?></legend>
 	<?php
-		echo $form->input('username');
-		echo $form->input('password');
-		echo $form->input('group_id');
-		echo $form->input('name');
-		echo $form->input('rg');
-		echo $form->input('nascimento');
-		echo $form->input('telefone');
-		echo $form->input('celular');
-		echo $form->input('endereco');
-		echo $form->input('cep');
-		echo $form->input('email');
-		echo $form->input('email2');
-		echo $form->input('ativo');
-		echo $form->input('aut_email');
+		echo $form->input('username', array('label' => 'Matrícula'));
+		echo $form->input('password', array('label' => 'Senha'));
+		echo $form->input('group_id', array('label' => 'Grupo'));
+		echo $form->input('name', array('label' => 'Nome'));
+		echo $form->input('rg', array('label' => 'RG'));
+		echo $form->input('nascimento', array('label' => 'Data de Nascimento'));
+		echo $form->input('telefone', array('label' => 'Telefone Residencial'));
+		echo $form->input('celular', array('label' => 'Celular'));
+		echo $form->input('endereco', array('label' => 'Endereço'));
+		echo $form->input('cep', array('label' => 'CEP'));
+		echo $form->input('email', array('label' => 'Email'));
+		echo $form->input('email2', array('label' => 'Email 2'));
+		echo $form->input('ativo', array('label' => 'Ativo'));
+		echo $form->input('aut_email', array('label' => 'Autorizado a receber email'));
 	?>
 	</fieldset>
-<?php echo $form->end('Submit');?>
+<?php echo $form->end('Enviar');?>
 </div>
 <div class="actions">
 	<ul>
-		<li><?php echo $html->link(__('List Users', true), array('action'=>'index'));?></li>
+		<li><?php echo $html->link(__('Listar Usuarios', true), array('action'=>'index'));?></li>
 	</ul>
 </div>
