@@ -27,9 +27,10 @@ class EquipamentosController extends AppController {
 				$this->Session->setFlash(__('The Equipamento could not be saved. Please, try again.', true));
 			}
 		}
-		$marcas = $this->Equipamento->Marca->find('list');
-		$catEquipamentos = $this->Equipamento->CatEquipamento->find('list');
-		$this->set(compact('marcas', 'catEquipamentos'));
+		$situacaos = $this->Equipamento->Situacao->find('list');
+		$equipamentoTipos = $this->Equipamento->EquipamentoTipo->find('list');
+		$equipamentoMarcas = $this->Equipamento->EquipamentoMarca->find('list');
+		$this->set(compact('situacaos', 'equipamentoTipos', 'equipamentoMarcas'));
 	}
 
 	function edit($id = null) {
@@ -48,9 +49,10 @@ class EquipamentosController extends AppController {
 		if (empty($this->data)) {
 			$this->data = $this->Equipamento->read(null, $id);
 		}
-		$marcas = $this->Equipamento->Marca->find('list');
-		$catEquipamentos = $this->Equipamento->CatEquipamento->find('list');
-		$this->set(compact('marcas','catEquipamentos'));
+		$situacaos = $this->Equipamento->Situacao->find('list');
+		$equipamentoTipos = $this->Equipamento->EquipamentoTipo->find('list');
+		$equipamentoMarcas = $this->Equipamento->EquipamentoMarca->find('list');
+		$this->set(compact('situacaos','equipamentoTipos','equipamentoMarcas'));
 	}
 
 	function delete($id = null) {

@@ -28,13 +28,14 @@ class UsersController extends AppController {
        * a tabaela aros_acos será afetada
        * quando a aplicação estiver pronta, com todos os models e controllers,
        * devemos limpar esta tabela e executar esta função
+       */
     function initDB() {
         $group =& $this->User->Group;
         //Permite os administradores fazerem tudo
         $group->id = 1;     
         $this->Acl->allow($group, 'controllers');
     }
-     */
+     
      
  
     /**
@@ -42,6 +43,7 @@ class UsersController extends AppController {
      * Atualizará a tabela acos com todas as ações do sistema
      * quando a aplicação estiver pronta, com todos os models e controllers,
      * devemos limpar esta tabela e executar esta função
+    
     function buildAcl() {
         $log = array();
  

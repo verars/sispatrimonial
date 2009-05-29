@@ -2,3 +2,107 @@
 2009-04-30 10:21:13 Warning: Warning (512): DbAcl::allow() - Invalid node in [CORE\cake\libs\controller\components\acl.php, line 325]
 2009-04-30 10:21:46 Warning: Warning (512): DbAcl::allow() - Invalid node in [CORE\cake\libs\controller\components\acl.php, line 325]
 2009-04-30 10:21:46 Warning: Warning (512): DbAcl::allow() - Invalid node in [CORE\cake\libs\controller\components\acl.php, line 325]
+2009-05-29 16:15:03 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 1
+            [username] => 0619540
+            [group_id] => 1
+            [created] => 2009-04-30 10:15:48
+            [name] => Gilberto Ferreira Junior
+            [rg] => 2546319
+            [nascimento] => 1989-07-20
+            [telefone] => 6130328552
+            [celular] => 6181572457
+            [endereco] => QNE 19 casa 22
+            [cep] => 72125190
+            [email] => gilbertofjr@gmail.com
+            [email2] => gilberto.comp@gmail.com
+            [ativo] => 1
+            [aut_email] => 1
+        )
+
+)
+
+Aco: Equipamentos/index in [CORE\cake\libs\controller\components\acl.php, line 239]
+2009-05-29 16:15:03 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\sispatrimonial\sispatrimonial\cake\basics.php:111) in [CORE\cake\libs\controller\controller.php, line 640]
+2009-05-29 16:15:21 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 1
+            [username] => 0619540
+            [group_id] => 1
+            [created] => 2009-04-30 10:15:48
+            [name] => Gilberto Ferreira Junior
+            [rg] => 2546319
+            [nascimento] => 1989-07-20
+            [telefone] => 6130328552
+            [celular] => 6181572457
+            [endereco] => QNE 19 casa 22
+            [cep] => 72125190
+            [email] => gilbertofjr@gmail.com
+            [email2] => gilberto.comp@gmail.com
+            [ativo] => 1
+            [aut_email] => 1
+        )
+
+)
+
+Aco: Acessorios/index in [CORE\cake\libs\controller\components\acl.php, line 239]
+2009-05-29 16:15:21 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\sispatrimonial\sispatrimonial\cake\basics.php:111) in [CORE\cake\libs\controller\controller.php, line 640]
+2009-05-29 16:17:35 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 1
+            [username] => 0619540
+            [group_id] => 1
+            [created] => 2009-04-30 10:15:48
+            [name] => Gilberto Ferreira Junior
+            [rg] => 2546319
+            [nascimento] => 1989-07-20
+            [telefone] => 6130328552
+            [celular] => 6181572457
+            [endereco] => QNE 19 casa 22
+            [cep] => 72125190
+            [email] => gilbertofjr@gmail.com
+            [email2] => gilberto.comp@gmail.com
+            [ativo] => 1
+            [aut_email] => 1
+        )
+
+)
+
+Aco: Users/buildAcl in [CORE\cake\libs\controller\components\acl.php, line 239]
+2009-05-29 16:17:35 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\sispatrimonial\sispatrimonial\cake\basics.php:111) in [CORE\cake\libs\controller\controller.php, line 640]
+2009-05-29 16:19:16 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 1
+            [username] => 0619540
+            [group_id] => 1
+            [created] => 2009-04-30 10:15:48
+            [name] => Gilberto Ferreira Junior
+            [rg] => 2546319
+            [nascimento] => 1989-07-20
+            [telefone] => 6130328552
+            [celular] => 6181572457
+            [endereco] => QNE 19 casa 22
+            [cep] => 72125190
+            [email] => gilbertofjr@gmail.com
+            [email2] => gilberto.comp@gmail.com
+            [ativo] => 1
+            [aut_email] => 1
+        )
+
+)
+
+Aco: Users/initDB in [CORE\cake\libs\controller\components\acl.php, line 239]
+2009-05-29 16:19:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\sispatrimonial\sispatrimonial\cake\basics.php:111) in [CORE\cake\libs\controller\controller.php, line 640]

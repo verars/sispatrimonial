@@ -27,8 +27,10 @@ class AcessoriosController extends AppController {
 				$this->Session->setFlash(__('The Acessorio could not be saved. Please, try again.', true));
 			}
 		}
+		$situacaos = $this->Acessorio->Situacao->find('list');
+		$acessorioTipos = $this->Acessorio->AcessorioTipo->find('list');
 		$equipamentos = $this->Acessorio->Equipamento->find('list');
-		$this->set(compact('equipamentos'));
+		$this->set(compact('situacaos', 'acessorioTipos', 'equipamentos'));
 	}
 
 	function edit($id = null) {
@@ -47,8 +49,10 @@ class AcessoriosController extends AppController {
 		if (empty($this->data)) {
 			$this->data = $this->Acessorio->read(null, $id);
 		}
+		$situacaos = $this->Acessorio->Situacao->find('list');
+		$acessorioTipos = $this->Acessorio->AcessorioTipo->find('list');
 		$equipamentos = $this->Acessorio->Equipamento->find('list');
-		$this->set(compact('equipamentos'));
+		$this->set(compact('situacaos','acessorioTipos','equipamentos'));
 	}
 
 	function delete($id = null) {
